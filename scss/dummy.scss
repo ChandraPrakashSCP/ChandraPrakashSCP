@@ -1,0 +1,30 @@
+@import "./common";
+
+body {
+  background-color: #343a40;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  border: 4px solid $pri_color;
+  padding: 10%;
+  margin: 5%;
+  &_content {
+    flex: 1;
+    text-align: center;
+    font-size: 3rem;
+    color: $pri_color;
+    font-family: $bold-font;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    &_content {
+      font-size: 1.5rem;
+      justify-content: center;
+    }
+  }
+}
